@@ -20,8 +20,8 @@ def kmer_stats(seq, k):
     return data
 
 for k in (2, 3):
-    print(f"\n{k}-mers (k={k}):")
-    print(f"{'k-mer':>6}  {'count':>5}  {'rel_freq':>10}  {'percent':>9}")
+    print(f"\n{k}-nucleotides (k={k}):")
+    print(f"{'k-nucleotide':>6}  {'count':>5}  {'rel_freq':>10}  {'percent':>9}")
     print("-" * 36)
     for km, c, rel, pct in kmer_stats(S, k):
         print(f"{km:>6}  {c:5d}  {rel:10.4f}  {pct:8.2f}%")
